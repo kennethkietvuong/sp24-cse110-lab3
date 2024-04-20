@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-[https://kennethkietvuong.github.io/Lab2_Starter/](https://kennethkietvuong.github.io/Lab2_Starter/)
+# Lab 3
+[https://kennethkietvuong.github.io/sp24-cse110-lab3/](https://kennethkietvuong.github.io/sp24-cse110-lab3/)
