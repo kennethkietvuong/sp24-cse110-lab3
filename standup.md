@@ -1,6 +1,5 @@
 # Standup Notes Template
 *Date: -/-/--*
-<hr>
 
 ## Attendees
 - [Insert Name]
@@ -20,7 +19,7 @@
 | [Insert Name] | Task |
 | [Insert Name] | Task |
 
-### Weekly Team TODO
+## Weekly Team TODO
 - [Task 1]
 - [Task 2]
 - [Task 3]
