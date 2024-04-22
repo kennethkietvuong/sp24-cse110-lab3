@@ -123,6 +123,17 @@ hr {
     font-size: 2em;
 }
 
+@property --yellow-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: yellow;
+}
+
+.fallbacktest {
+    color: var(--unknown-color, yellow);
+    margin-bottom: 10px;
+}
+
 /* Agenda Content */
 img {
     margin-left: auto;
