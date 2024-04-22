@@ -191,3 +191,22 @@ img {
     flex: 0 1 auto;
     align-self: center;
 }
+
+/* Contact Form */
+.submitButton {
+    /* background-color: yellow; */
+    font-family: sinclairmed;
+    width: 10vw;
+    height: 10vh;
+    font-size: 200%;
+    text-align: center;
+}
+
+.submitButton:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.submitButton:active {
+    box-shadow: 5px 5px rgba(255, 255, 0, 0.593);
+}
