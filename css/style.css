@@ -105,12 +105,16 @@ hr {
 
 .centerList {
     margin-top: 10px;
-    padding-left: 25px;
+    padding-left: 100px;
+    padding-right: 60px;
+    padding-bottom: 1px;
+    padding-top: 1px;
 }
 
 .summaryInfo {
     text-align: center;
     display: block;
+    padding: 1px 1px 1px 1px;
 }
 
 .centerDiv, .centerSection{
@@ -152,19 +156,16 @@ img {
 }
 
 .child1 {
-    /* background-color: red; */
     margin: auto;
     width: 100%;
     grid-column-start: 1;
 }
 
 .child2 {
-    /* background-color: blue; */
     grid-column-start: 2;
 }
 
 .child3 {
-    /* background-color: green; */
     margin: auto;
     width: 100%;
     grid-column-start: 3;
