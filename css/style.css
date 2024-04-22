@@ -7,6 +7,8 @@ body {
 
 h2 {
     font-size: 2em;
+    background-color: yellow;
+    color: #0c262d;
 }
 
 @font-face {
@@ -57,6 +59,7 @@ header {
     color: rgba(255, 255, 255, 0.7);
     margin-top: 1mm;
     font-family: sinclairreg;
+    background-color: #061417;
 }
 
 hr {
