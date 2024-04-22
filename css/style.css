@@ -22,6 +22,8 @@ h2 {
     src: url(fonts/FSSinclairRegular.otf);
 }
 
+
+
 /* Meeting Title & Date */  
 .headerlogo {
     height: auto;
@@ -196,9 +198,13 @@ img {
     align-self: center;
 }
 
+.unknown-image {
+    width: 256px;
+    height: 256px;
+}
+
 /* Contact Form */
 .submitButton {
-    /* background-color: yellow; */
     font-family: sinclairmed;
     width: 10vw;
     height: 10vh;
@@ -213,4 +219,44 @@ img {
 
 .submitButton:active {
     box-shadow: 5px 5px rgba(255, 255, 0, 0.593);
+}
+
+
+/* Media Query Based on Screen Size */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .headerlogo {
+        width: 80%;
+    }
+    
+    .headertitle {
+        font-size: 3rem;
+    }
+
+    .headerdate {
+        font-size: 1rem;
+    }
+
+    .parent, .child1, .child2, .child3, .img-flex, .unknown-image {
+        display: none;
+    }
+
+    .flexbox {
+        font-size: 10px;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    .summaryInfo {
+        font-size: 15px;
+    }
+
+    .submitButton {
+        width: 2cm;
+        height: 5vh;
+        font-size: 100%;
+    }
 }
