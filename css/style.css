@@ -1,8 +1,8 @@
 /* Global */
 body {
-    background-color: #061417;
     color: white;
     font-family: sinclairmed;
+    background-image: linear-gradient(180deg, #0c262d , #061417)
 }
 
 h2 {
