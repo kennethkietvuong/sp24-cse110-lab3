@@ -1,0 +1,98 @@
+/* Meeting Title & Date */  
+.headerlogo {
+    height: auto;
+    width: 35%;
+    display: block;
+    margin-top: 1.5cm;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    filter: invert(1);
+}
+
+.headertitle {
+    text-align: center;
+    color: rgb(255,255,255);
+    margin-bottom: 1mm;
+}
+
+.headerdate {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 1mm;
+    font-family: sinclairreg;
+}
+
+hr {
+    border-style: solid;
+    border-width: 1Q;
+    border-color: white;
+
+    margin: auto 2.5cm auto 2.5cm;
+}
+
+.headertopic {
+    text-align: center;
+    margin-bottom: 1cm;
+}
+
+.headerattendance #attend-list {
+    text-align: center;
+}
+
+.center.attendance {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1cm;
+}
+
+.summary-title {
+    margin-bottom: 1mm;
+    margin-top: 1mm;
+}
+
+.attend-title {
+    margin-bottom: 1mm;
+}
+
+.test {
+    margin-top: 10px;
+    padding-left: 25px;
+}
+
+.summaryInfo {
+    text-align: center;
+    display: block;
+}
+
+
+.centerDiv {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.hyperLinkColor {
+    color: skyblue;
+}
+
+
+
+/* Temp */
+body {
+    background-color: #061417;
+    color: white;
+    font-family: sinclairmed;
+}
+
+@font-face {
+    font-family: sinclairmed;
+    src: url(test/FSSinclairMedium.otf);
+}
+
+@font-face {
+    font-family: sinclairreg;
+    src: url(test/FSSinclairRegular.otf);
+}
