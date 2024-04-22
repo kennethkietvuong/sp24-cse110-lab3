@@ -135,6 +135,8 @@ hr {
     font-size: 2em;
 }
 
+/* Custom CSS variable and fallback */
+
 @property --yellow-color {
     syntax: "<color>";
     inherits: false;
@@ -158,6 +160,8 @@ img {
 .parent {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 1cm;
 }
 
 .child1 {
