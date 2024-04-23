@@ -137,11 +137,8 @@ hr {
 }
 
 /* Custom CSS variable and fallback */
-
-@property --yellow-color {
-    syntax: "<color>";
-    inherits: false;
-    initial-value: yellow;
+:root {
+    --yellow-color: yellow;
 }
 
 .fallbacktest {
