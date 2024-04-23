@@ -12,6 +12,10 @@
                 margin-top: 1px;
                 text-align: center;
             }
+
+            #tableofcontents {
+            color: color(srgb 1 1 0);
+            }
         </style>
     </head>
 
@@ -41,8 +45,8 @@
 
             <div class="center div">
                 <h3 class="summary-title" style="text-align: center;">Summary</h3>
-                <p class="summaryInfo">
-                    Helldivers are tasked to invade and liberate surrounding planets in the name of Super Earth.<br>
+                <p class="summaryInfo, parentNest">
+                    Helldivers are tasked to <span class="childNest">invade and liberate</span> surrounding planets in the name of Super Earth.<br>
                     If helldivers encounter the Terminids, they are to eliminate nests and secure E-710 farms.<br>
                     If helldivers encounter the Automatons, they are to elminiate fabricators and planetary signal jammers. <br>
                     If helldivers encounter illegal broadcasts or sympathizers, they are to Officer of the offender. <br>
@@ -50,7 +54,7 @@
             </div>
 
             <div class="centerDiv">
-                <h3 class="tableofcontents">Table of Contents</h3>
+                <h3 id="tableofcontents">Table of Contents</h3>
                 <nav>
                     <ol class="centerList">
                         <li><a class="hyperLinkColor" href="#agenda">Agenda</a></li>
@@ -138,6 +142,8 @@
                     There are numerous ways to deal with Terminids. Below are few common methods: 
                 </p>
                 
+                <p>Below are few common methods:</p>
+
                 <details>
                     <summary>Destroying Bug Nests</summary>                    
                     <img src="images/bug_holes.gif" alt="Helldiver throwing grenades at bug holes">
@@ -158,12 +164,15 @@
             <section class="centerSection">
                 <h2>Dealing with Illegal Broadcasts & Sympathizers</h2>
                 <p>Illegal broadcasts and sympathizers for these lifeforms will NOT be tolerated. <br>
-                    Report any sympathizers to your local Democratic Officer. <br>
-                    <br>
-                    Below are some examples of illegal broadcasts:
+                    <div>
+                        Report any sympathizers to your local Democratic Officer. <br>
+                    </div>
+                    <p>
+                        Below are some examples of illegal broadcasts:
+                    </p>
                 </p>
 
-                <video controls width="250">
+                <video controls width="300">
                     <source src="images/not_a_big_fan_of_the_government.mp4">
                 </video>
 
@@ -180,7 +189,7 @@
                 <p>
                     The following goals have not been met since the previous embarkment of Helldivers:
                 </p>
-                    <ul>
+                    <ul id="unfinished-business-list">
                         <li>Collecting research samples</li>
                         <li>Upgrading the Super Destroyer</li>
                     </ul>
@@ -193,9 +202,23 @@
                 </p>
                     <ol>
                         <li>Take back the Hydra Sector</li>
+                        <ol>
+                            <li> Target bot fabricators</li>
+                        </ol>
                         <li>Take back the Andromeda Sector</li>
+                        <ol>
+                            <li> Target drone walkers</li>
+                            <li> Target ship fabricators</li>
+                        </ol>
                         <li>Take back the Lacaille Sector</li>
+                        <ol>
+                            <li> Target bug holes</li>
+                        </ol>
                         <li>Take back the Valdis Sector</li>
+                        <ol>
+                            <li> Target E-710 farms</li>
+                            <li> Target chargers</li>
+                        </ol>
                     </ol>
             </section>
         </main>
@@ -288,8 +311,11 @@
                         <input type="button" name="submit" value="SUBMIT" class="submitButton">
                     </div>
                 </fieldset>
-
             </form>
+
+            <div class="inspiration">
+                Inspired by this <a class=hyperLinkColor href="https://gloryforsuperearth.com/" target="_blank">website</a>
+            </div>
         </footer>
     </body>
 </html>

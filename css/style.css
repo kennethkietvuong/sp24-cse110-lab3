@@ -1,7 +1,10 @@
 /* Global */
+* {
+    font-family: sinclairmed;
+}
+
 body {
     color: white;
-    font-family: sinclairmed;
     background-image: linear-gradient(180deg, #0c262d , #061417)
 }
 
@@ -100,10 +103,6 @@ hr {
     margin-bottom: 1mm;
     margin-top: 1mm;
     color: hsla(60, 100%, 50%, 1);
-}
-
-.tableofcontents {
-    color: color(srgb 1 1 0);
 }
 
 .hyperLinkColor {
@@ -258,5 +257,58 @@ img {
         width: 2cm;
         height: 5vh;
         font-size: 100%;
+    }
+}
+
+/* Webpage inspiration */
+.inspiration {
+    margin-top: 5cm;
+
+    color: black;
+    background-color: white;
+}
+
+a[href="https://gloryforsuperearth.com/"] {
+    color: #205cde;
+}
+
+a[href="https://gloryforsuperearth.com/"]:active {
+    color: purple;
+}
+
+
+/* Misc properties to fulfill checklist */
+ol ol{
+    list-style-type: lower-alpha;
+    padding-right: 10px;
+    color: gray;
+}
+
+ul#unfinished-business-list > li {
+    font-family: sinclairreg;
+}
+
+p ~ div {
+    color: red;
+}
+
+div + p {
+    color: orange;
+}
+
+p:has(+ p) {
+    color: orange;
+}
+
+.parentNest {
+    /* Parent properties*/
+    font-family: sinclairreg;
+    text-align: center;
+    display: block;
+    padding: 1px 1px 1px 1px;
+
+    & .childNest {
+        /* Child properties */
+        text-decoration: underline;
     }
 }
