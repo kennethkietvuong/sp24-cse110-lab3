@@ -1,3 +1,32 @@
+/* Global */
+* {
+    font-family: sinclairmed;
+}
+
+body {
+    color: white;
+    background-image: linear-gradient(180deg, #0c262d , #061417)
+}
+
+h2 {
+    font-size: 2em;
+    background-color: yellow;
+    color: #0c262d;
+    position: static;
+}
+
+@font-face {
+    font-family: sinclairmed;
+    src: url(fonts/FSSinclairMedium.otf);
+}
+
+@font-face {
+    font-family: sinclairreg;
+    src: url(fonts/FSSinclairRegular.otf);
+}
+
+
+
 /* Meeting Title & Date */  
 .headerlogo {
     height: auto;
@@ -8,6 +37,7 @@
     margin-left: auto;
     margin-right: auto;
     filter: invert(1);
+    position: sticky;
 }
 
 header {
@@ -21,6 +51,8 @@ header {
     height: 400px;
     width: auto;
     opacity: 0.8;
+    position: relative;
+    top: 5px;
 }
 
 
@@ -28,6 +60,7 @@ header {
     text-align: center;
     color: rgb(255,255,255);
     margin-bottom: 1mm;
+    font-size: 3.5rem;
 }
 
 .headerdate {
@@ -35,12 +68,13 @@ header {
     color: rgba(255, 255, 255, 0.7);
     margin-top: 1mm;
     font-family: sinclairreg;
+    background-color: #061417;
 }
 
 hr {
     border-style: solid;
     border-width: 2.5px;
-    border-color: white;
+    border-color: #FFF;
     border-radius: 10Q;
 
     margin: auto 2.5cm auto 2.5cm;
@@ -52,6 +86,7 @@ hr {
 }
 
 .center.div {
+    min-width: 1px;
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -60,52 +95,220 @@ hr {
 
 .attend-title {
     margin-bottom: 1mm;
-    color: yellow;
+    color: hsl(60, 100%, 50%);
     text-align: center;
 }
 
 .summary-title {
     margin-bottom: 1mm;
     margin-top: 1mm;
-    color: yellow;
+    color: hsla(60, 100%, 50%, 1);
+}
+
+.hyperLinkColor {
+    color: color-mix(in srgb, red 0%, rgb(135, 206, 235) 100%)
 }
 
 .centerList {
     margin-top: 10px;
-    padding-left: 25px;
+    padding-left: 100px;
+    padding-right: 60px;
+    padding-bottom: 1px;
+    padding-top: 1px;
 }
 
 .summaryInfo {
     text-align: center;
     display: block;
+    padding: 1px 1px 1px 1px;
 }
 
-.centerDiv {
+.centerDiv, .centerSection{
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-}
-
-.hyperLinkColor {
-    color: skyblue;
+    margin-bottom: 50px;
 }
 
 
+.stars {
+    font-size: 2em;
+}
 
-/* Temp */
-body {
-    background-color: #061417;
-    color: white;
+/* Custom CSS variable and fallback */
+
+@property --yellow-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: yellow;
+}
+
+.fallbacktest {
+    color: var(--unknown-color, yellow);
+    margin-bottom: 10px;
+}
+
+/* Agenda Content */
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+/* Grid Display Layout for Star */
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 1cm;
+}
+
+.child1 {
+    margin: auto;
+    width: 100%;
+    grid-column-start: 1;
+}
+
+.child2 {
+    grid-column-start: 2;
+}
+
+.child3 {
+    margin: auto;
+    width: 100%;
+    grid-column-start: 3;
+}
+
+/* Flexbox */
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    list-style: none;
+    margin-bottom: 7vh;
+}
+
+.flexitem {
+    flex: 0 1 auto;
+    align-self: center;
+}
+
+.unknown-image {
+    width: 256px;
+    height: 256px;
+}
+
+/* Contact Form */
+.submitButton {
     font-family: sinclairmed;
+    width: 10vw;
+    height: 10vh;
+    font-size: 200%;
+    text-align: center;
 }
 
-@font-face {
-    font-family: sinclairmed;
-    src: url(fonts/FSSinclairMedium.otf);
+.submitButton:hover {
+    background-color: yellow;
+    color: black;
 }
 
-@font-face {
+.submitButton:active {
+    box-shadow: 5px 5px rgba(255, 255, 0, 0.593);
+}
+
+
+/* Media Query Based on Screen Size */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .headerlogo {
+        width: 80%;
+    }
+    
+    .headertitle {
+        font-size: 3rem;
+    }
+
+    .headerdate {
+        font-size: 1rem;
+    }
+
+    .parent, .child1, .child2, .child3, .img-flex, .unknown-image {
+        display: none;
+    }
+
+    .flexbox {
+        font-size: 10px;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    .summaryInfo {
+        font-size: 15px;
+    }
+
+    .submitButton {
+        width: 2cm;
+        height: 5vh;
+        font-size: 100%;
+    }
+}
+
+/* Webpage inspiration */
+.inspiration {
+    margin-top: 5cm;
+
+    color: black;
+    background-color: white;
+}
+
+a[href="https://gloryforsuperearth.com/"] {
+    color: #205cde;
+}
+
+a[href="https://gloryforsuperearth.com/"]:active {
+    color: purple;
+}
+
+
+/* Misc properties to fulfill checklist */
+ol ol{
+    list-style-type: lower-alpha;
+    padding-right: 10px;
+    color: gray;
+}
+
+ul#unfinished-business-list > li {
     font-family: sinclairreg;
-    src: url(fonts/FSSinclairRegular.otf);
+}
+
+p ~ div {
+    color: red;
+}
+
+div + p {
+    color: orange;
+}
+
+p:has(+ p) {
+    color: orange;
+}
+
+.parentNest {
+    /* Parent properties*/
+    font-family: sinclairreg;
+    text-align: center;
+    display: block;
+    padding: 1px 1px 1px 1px;
+
+    & .childNest {
+        /* Child properties */
+        text-decoration: underline;
+    }
 }
